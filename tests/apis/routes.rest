@@ -1,0 +1,30 @@
+/// GET all
+Get http://localhost:3010/orders
+
+###
+
+// GET one order
+Get http://localhost:3010/orders/1
+
+###
+
+// GET orders at specific date
+Get http://localhost:3010/orders/Iphone/20220822
+
+###
+
+// POST new order
+POST http://localhost:3010/orders
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "New Order",
+  "type" : "Iphone",
+  "customer" : "Tim"
+}
+
+###
+
+// DELETE all orders
+DELETE http://localhost:3010/orders
