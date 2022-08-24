@@ -2,37 +2,34 @@
 
 ## About
 
-This app is a basic api end point demonstration.
-It uses express with mongodb as a database
-For testing it is using Jest and Supertest.
-This app uses a web deployment of mongodb for easy setup on any computer.
+This app is a basic api end point demonstration. It uses express with mongodb as a database, for testing it is using Jest and Supertest.
+It uses a web deployment of mongodb for easy setup on any computer.
 
-##
-Requirements
+## Requirements
 Node js
 MongoDb: password [Set in .env file]
 
 ## Dependencies
-core
-express
-mongodb
-mongoose
+### Core
+ - Express (server)
+ - Mongodb (database)
+ - Mongoose (database)
 
-dev
-dotenv
-jest
-nodemon
-supertest
+### Dev
+ - Dotenv (environmental variables)
+ - Nodemon (reload server)
+ - Jest (general testing)
+ - Supertest (api testing)
 
 ## Getting Started
 
 1. Navigate to the .env file and replace the password with the password from email
 
 2. To run tests you can use the following command 
-npm run test
+```npm run test```
 
-3. To start the server you can use the follwoing command 
-npm run start 
+3. To start the server you can use the following command 
+```npm run start ```
 
 4. To manualy test api endpoint use prefered curling method with the the api end points below or use VSC code's REST client and navigate to tests/apis.routes.rest
 
@@ -42,14 +39,14 @@ There are a total of 5 endpoints, three core and two additional supporting endpo
 
 Core endpoints
 
-POST /orders
-GET /orders/{id}
-GET /orders/{type}/{date}
+ - ```POST /orders```
+ - ```GET /orders/{id}```
+ - ```GET /orders/{type}/{date}```
 
 Additional endpoints for testing purposes
 
-GET /orders
-DELETE /orders
+ - ```GET /orders```
+ - ```DELETE /orders```
 
 ## Assumptions
 
@@ -60,17 +57,17 @@ I have coded it in a way that it is easy to change the database_url in the test 
 ## Explantion for code choice
 
 While I am most proficient at building APIs on Ruby on Rails I choose NodeJs because setting up the environment for node js is much easier then working with Ruby.
-It also made it more of a challenge and chance to use the JavaScript language in a way that was a great in terms of learning
+It also made it more of a challenge and chance to use the JavaScript language in a different way.
 
 I approached testing in a test driven way, I wrote the faiing tests first and then finished the code until the tests passed.
 
 ## References
 
-Brief overview of topic: https://www.youtube.com/watch?v=-MTSQjw5DrM&t
-Supertest: https://www.npmjs.com/package/supertest
-Jest: https://jestjs.io/docs/getting-started
-Mongoose: https://mongoosejs.com/docs/schematypes.html
+ - Brief overview of topic: https://www.youtube.com/watch?v=-MTSQjw5DrM&t
+ - Supertest: https://www.npmjs.com/package/supertest
+ - Jest: https://jestjs.io/docs/getting-started
+ - Mongoose: https://mongoosejs.com/docs/schematypes.html
 
 ## What I would add
-I would add a seperate database for testing purposes.
-I would export seed data into it's own file and extend on testing
+ - Addition of seperate database for testing purposes.
+ - Export seed data into it's own file and extend on testing
