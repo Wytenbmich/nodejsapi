@@ -36,9 +36,9 @@ npm run start
 
 4. To manualy test api endpoint use prefered curling method with the the api end points below
 
-or
+  or
 
-use VSC code's REST client and navigate to tests/apis.routes.rest
+  use VSC code's REST client and navigate to tests/apis.routes.rest
 
 ## API
 
