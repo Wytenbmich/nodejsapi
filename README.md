@@ -34,11 +34,7 @@ npm run test
 3. To start the server you can use the follwoing command 
 npm run start 
 
-4. To manualy test api endpoint use prefered curling method with the the api end points below
-
-  or
-
-  use VSC code's REST client and navigate to tests/apis.routes.rest
+4. To manualy test api endpoint use prefered curling method with the the api end points below or use VSC code's REST client and navigate to tests/apis.routes.rest
 
 ## API
 
